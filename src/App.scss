@@ -102,6 +102,10 @@ $padding: 20px;
 
 }
 
+.pic2{
+  display: none;
+}
+
 .tempsubcont{
   margin-left: $padding ;
   display: flex;
@@ -112,4 +116,22 @@ $padding: 20px;
 .instatemp{
   height: auto;
   width: 80px;
+}
+
+
+@media all and (max-width: 800px) {
+  .pic{
+    margin-left: 5px;
+    height: 50vw;
+    margin-right: 2rem;
+  }
+  h3{
+    font-size: 30px;
+  }
+  .Router{
+    display: none;
+  }
+  h4{
+    font-size: 15px;
+  }
 }
