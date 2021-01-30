@@ -1,0 +1,113 @@
+$darkColor: #2C2C2C; 
+$lightColor: #9B9B9B; 
+$backColor:#f6f6f6; 
+
+$padding: 20px;
+
+.Background{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Fonts Specifcatons 
+*{
+  font-family: 'Montserrat', sans-serif;
+  background-color: $backColor;
+  h1{
+    font-size: 24px;
+    color: $darkColor;
+    letter-spacing: 0.07em;
+    margin-bottom: 0px;
+    margin-top: 8px;
+  }
+  h5{
+    font-size: 8px;
+    color: $lightColor;
+    margin-left: 5vw;
+  }
+  h3{
+    font-size: 40px;
+  }
+  h4{
+    font-size: 10px;
+    font-weight: 300;
+  }
+  p{
+    font-size: 6px;
+    color: $lightColor;
+    padding-left: 0.1rem;
+  }
+}
+
+//Line 
+
+.Horzline{
+  border-bottom: 2px solid $darkColor;
+  display: block;
+  width: 30vw;
+  margin-left: $padding + 1px;
+  margin-top: $padding;
+}
+
+//Header
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Namelogo {
+  display: flex;
+  flex-direction: column;
+  padding-left: $padding;
+}
+
+.Router{
+  display: flex;
+  flex-direction: row;
+  padding-right: 60px;
+}
+
+//Pic Collage 
+
+.Container{
+  height: 100%;
+  background-color: aqua;
+  margin-left: $padding + 1px;
+  margin-right: $padding + 1px;
+  margin-top: $padding - 8px;
+  margin-bottom: $padding / 2;
+}
+
+.pic{
+  margin-left: 5px;
+  height: 70vh;
+  margin-right: 2rem;
+}
+
+.tempcont{
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+.tempcontv2{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+
+.tempsubcont{
+  margin-left: $padding ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.instatemp{
+  height: auto;
+  width: 80px;
+}
