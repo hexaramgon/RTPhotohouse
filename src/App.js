@@ -23,7 +23,7 @@ function App() {
       <div className = "tempsubcont">
         <h3>Currently Under Construction</h3>
         <div className="tempcontv2">
-          <h4>In the meantime, find me on Instagram @eddfromtarget</h4>
+          <h4>In the meantime, DM me on Instagram @eddfromtarget</h4>
           <a href='https://www.instagram.com/eddfromtarget/'><img src={Insta} className='instatemp'></img></a>
         </div>
       </div>
