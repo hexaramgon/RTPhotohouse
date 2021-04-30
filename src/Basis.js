@@ -27,37 +27,44 @@ import {Navbar, Nav} from 'react-bootstrap'
 
 function Basis() {
 
+
+  var y = window.scrollY
+
     const [slide, setSlide] = useState('0');
     const [yaxis, setyaxis] = useState({overflowY: 'visible'});
     // const [photodisplay, setdisplay] = useState({ display: 'none',});
     // const [photo, setphoto] = useState({img1});
-    const [counter, setcounter] = useState(1);
+    // const [counter, setcounter] = useState(1);
 
     var props =  useSpring({
-        to: {left: slide + '%'},
+        to: {left: slide + '%',
+            top: '0%'
+            },
         config: config.default
       })
 
     function click(x) {
-
+      const el = document.querySelector('.css-slider-wrapper');
+      // get scroll position in px
         setSlide(x)
         if (x !== '0') {
+            el.scrollTop = 0;
             setyaxis({overflowY: 'hidden'})
         } else{
             setyaxis({overflowY: 'visible'})
         }
     }
 
-    function toolbarclick() {
-      if(counter) {
-        setyaxis({overflowY: 'hidden'});
-        setcounter(0);
-      }else{
-            setyaxis({overflowY: 'visible'})
-            setcounter(1);
+    // function toolbarclick() {
+    //   if(counter) {
+    //     setyaxis({overflowY: 'hidden'});
+    //     setcounter(0);
+    //   }else{
+    //         setyaxis({overflowY: 'visible'})
+    //         setcounter(1);
 
-        }
-    }
+    //     }
+    // }
 
 
     return (
@@ -71,7 +78,7 @@ function Basis() {
 
 
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => toolbarclick()} />
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="ul mr-auto">
       <Nav.Link href="#Works" onClick={() => click('0')}>Works</Nav.Link>
