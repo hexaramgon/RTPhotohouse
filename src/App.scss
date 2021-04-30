@@ -112,6 +112,7 @@ html{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -431,6 +432,7 @@ form{
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  margin-top: 2rem;
 }
 
 #submit{
@@ -468,6 +470,7 @@ button:hover {
   background-color:  #333333;
   transition: transform .4s; /* Animation */
   border-radius: 10px 10px 110px;
+  margin-top: 3rem;
 }
 
 .pricebox:hover{
@@ -612,6 +615,6 @@ li{
 
 .faclog{
   margin-bottom: 40px;
-  width: 100px;
+  width: 70px;
   height: auto;
 }
