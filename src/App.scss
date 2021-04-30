@@ -1,137 +1,567 @@
-$darkColor: #2C2C2C; 
-$lightColor: #9B9B9B; 
-$backColor:#f6f6f6; 
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/_transitions";
+@import "~bootstrap/scss/_nav";
+@import "~bootstrap/scss/_navbar";
 
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+
+$darkColor: #161616; 
+// $lightColor: #161616; 
+$lightColor: white; 
+// $backColor:#f5f5f5; 
+$backColor:#161616; 
+$defaultfont: 'DM Sans', sans-serif;
 $padding: 20px;
+
+html{
+  background: $backColor;
+
+}
 
 .Background{
   height: 100vh;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  width: 100vw;
+  // background: linear-gradient(190deg, rgb(10, 10, 10), rgb(37, 37, 37) 100%);
+  background: $backColor;
 }
-
 
 // Fonts Specifcatons 
 *{
-  font-family: 'Montserrat', sans-serif;
-  background-color: $backColor;
+  font-family: 'Cardo', 'serif' ;
+  background-color: rgba(255, 255, 255, 0);
+  color: $lightColor;
+  letter-spacing: 0.07em;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   h1{
     font-size: 40px;
-    color: $darkColor;
-    letter-spacing: 0.07em;
-    margin-bottom: 0px;
-    margin-top: 8px;
+    text-align: center;
   }
-  h5{
-    font-size: 18px;
-    color: $lightColor;
-    margin-left: 5vw;
+  h2{
+    font-family: $defaultfont;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: -16px;
+    margin-bottom: 6rem;
+    font-weight: 700;
   }
   h3{
-    font-size: 60px;
-  }
-  h4{
-    font-size: 18px;
-    font-weight: 300;
+    font-family: $defaultfont;
   }
   p{
-    font-size: 12px;
-    color: $lightColor;
-    padding-left: 0.1rem;
+    font-family: $defaultfont ;
+    text-align: center;
   }
+  label{
+    font-family: $defaultfont ;
+  }
+  input{
+    font-family: $defaultfont ;
+  }
+  button{
+    font-family: $defaultfont ;
+  }
+  textarea{
+    font-family: $defaultfont ;
+
+  }
+  a{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+    font-family: $defaultfont !important;
+    color: $lightColor;
+  }
+  h4{
+    font-family: $defaultfont;
+    text-align: right;
+    padding: 2rem;
+    letter-spacing: 0em;    
+    font-size: 12px;
+  }
+  a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px $lightColor;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+  a:hover:after { transform: scaleX(1); }
+  a.fromRight:after{ transform-origin:100% 50%; }
+  a.fromLeft:after{  transform-origin:  0% 50%; }
+
 }
 
-//Line 
-
-.Horzline{
-  border-bottom: 2px solid $darkColor;
-  display: block;
-  width: 30vw;
-  margin-left: $padding + 1px;
-  margin-top: $padding;
-}
-
-//Header
-
-.Navbar {
+.row {
+  display: -ms-flexbox; /* IE10 */
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.Namelogo {
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
   display: flex;
-  flex-direction: column;
-  padding-left: $padding;
+  justify-content: center;
 }
 
-.Router{
-  display: flex;
-  flex-direction: row;
-  padding-right: 60px;
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 24%; /* IE10 */
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 20px;
 }
 
-//Pic Collage 
-
-.Container{
-  height: 100%;
-  background-color: aqua;
-  margin-left: $padding + 1px;
-  margin-right: $padding + 1px;
-  margin-top: $padding - 8px;
-  margin-bottom: $padding / 2;
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
-.pic{
-  margin-left: 5px;
-  height: 70vh;
-  margin-right: 2rem;
-}
-
-.tempcont{
-  display: flex;
-  flex-direction: row; 
-  justify-content: space-between;
-}
-
-.tempcontv2{
-  display: flex;
-  flex-direction: row; 
-  align-items: center;
-  justify-content: left;
-
-}
-
-.pic2{
+.Navbar .icon {
   display: none;
 }
 
-.tempsubcont{
-  margin-left: $padding ;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 992px) {
+  .ul{
+    flex-direction: column !important;
+
+  }
+  .column {
+    -ms-flex: 48%;
+    flex: 48%;
+    max-width: 48%;
+  }
+  .aboutrow{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .format{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .pricebox{
+    width: 100px;
+  }
+  .navbar{
+    align-self: flex-end;
+  }
+  .navbar-collapse {
+    width: 35%;
+    height: 100%;
+    background: #5e5e5e;
+    z-index: 2;
+    top: 0px;
+  }
+  .nav-link{
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    align-self: center;
+  }
+  .pricebox{
+    width: 250px !important;
+  }
 }
 
-.instatemp{
-  height: auto;
-  width: 80px;
-}
-
-
-@media all and (max-width: 800px) {
-  .pic{
-    margin-left: 5px;
-    height: 50vw;
-    margin-right: 2rem;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .profpic{
+    width: 80vw;
   }
-  h3{
-    font-size: 30px;
+  .format{
+    margin-left: 25px;
+    margin-right: 25px;
   }
-  .Router{
+  .column {
+    -ms-flex: 95%;
+    flex: 95%;
+    max-width: 95%;
+  }
+  .Navbar a {
     display: none;
   }
-  h4{
-    font-size: 15px;
+  .Navbar a.icon {
+    float: right;
+    display: block;
   }
+  .Navbar.responsive {
+    flex-direction: column;
+    position: absolute;
+    background: #ffe4c44d;
+    z-index: 4;
+    -webkit-transform: translateX(0%);
+			transform: translateX(0%);
+	  transition: transform 300ms linear;
+	  will-change: transform;
+
+  }
+  .Navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .Navbar.responsive a {
+    float: none;
+    display: block;
+    background: #7364514d;
+    text-align: center;
+    padding: 4rem;
+  }
+
+  .lisub{
+    padding: 0.7rem  !important; 
+
+  }
+  #othertest{
+    width: 60vw;
+    height: auto;
+  }
+  .betterspace {
+    width: 70px  !important;
+    height: 70px  !important;
+    padding-left: 3px  !important;
+    text-align: center  !important;
+    line-height: 68px  !important;
+    font-size: 34px  !important;
+    display: block  !important;
+  }
+  .pricingro {
+    margin-top: 2rem !important;
+  }
+  .pricebox{
+    width: 175px !important;
+  }
+}
+
+img{
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.imagehov{
+  transition: transform .4s; /* Animation */
+}
+
+.imagehov:hover{
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.pricingro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  height: 100vh;
+
+}
+
+.css-slider-wrapper{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+
+.slide-1{
+  width: 100vw;
+  position: absolute;
+  overflow-x: hidden;
+}
+
+.slide-2{
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.slide-3{
+  width: 100%;
+  position: absolute;
+  left: 200%;
+  overflow: hidden;
+}
+
+.slide-4{
+  width: 100%;
+  position: absolute;
+  left: 300%;
+  overflow: hidden;
+}
+
+.mover{
+  position: relative;
+  width: 100%
+}
+
+.profpic{
+  width: auto;
+  height:  40vw;
+}
+
+.aboutrow{
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  width: 100%;
+}
+
+#footertext{
+  text-align: left;
+  padding: 1rem;
+}
+
+// .photo-display{
+//   position: absolute;
+//   z-index: 4;
+//   justify-content: center;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(27, 27, 27, 0.55);
+//   backdrop-filter: blur(4px);
+//   display: none;
+//   padding: 3rem;
+// }
+
+.about_col{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  margin-top: 4rem;
+
+}
+// Social Media Icons
+
+.ulsub {
+  display: flex;
+  margin: 0; 
+  padding: 0
+}
+
+.lisub {
+  list-style: none;
+  padding: 2rem;
+}
+
+.asub {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+  padding-left: 3px;
+
+}
+
+.icon {
+  position: relative;
+  color: $backColor;
+  transition: .5s;
+  z-index: 3;
+}
+
+.asub:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.asub:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+
+.asub:hover:before {
+  top: 0;
+}
+
+.lisub:nth-child(1) a:before{
+  background: #000000;
+}
+
+.lisub:nth-child(2) a:before{
+  background: #55acee;
+}
+
+.lisub:nth-child(3) a:before {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.lisub:nth-child(4) a:before {
+  background: #f3f300;
+}
+
+.fab{
+  background-color: #834d4d00;
+}
+
+input{
+ background: white;
+ width: 100%;
+ height: 40px;
+ color: #000000;
+ margin-bottom: 15px;
+ border: 0px solid
+
+}
+
+form{
+  width: 80%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+#submit{
+  width: 150px;
+  height: 40px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  background: white;
+  color: #000000;
+  border: 0px solid
+}
+
+button{
+  border-radius: 2px;
+  border: 0px solid;
+  background-color: #5a5a5a;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.pricebox {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(107, 107, 107);
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  height: 500px;
+  background-color:  #333333;
+  transition: transform .4s; /* Animation */
+}
+
+.pricebox:hover{
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#nofont{
+  font-family: sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.toppricebox {
+  background-color: #5e5e5e;
+  height: 120px;
+}
+
+.price{
+  font-size: 40px;
+  padding: 1rem;
+}
+
+.pricelist{
+  display: flex;
+  flex-direction: column;
+}
+
+li{
+  font-family: $defaultfont ;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      width: 75%;
+      height: 100%;
+  }
+
+  .navbar-collapse.collapsing {
+      left: -75%;
+      transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+      left: 0;
+      transition: left 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+      transition: left 500ms ease-in-out;
+  }
+}
+
+.bg-dark{
+  background: #171717 !important;
+}
+
+.ul{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: nowrap; /* assumes you only want one row */
+}
+
+.navbar-collapse {
+  width: 45%;
+  height: 100%;
+  top: 0px;
 }

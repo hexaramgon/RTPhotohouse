@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.spinny{
+  animation: App-logo-spin infinite 5s linear;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.insp-logo-frame{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#nofont{
+  color: white;
+  text-align: center;
+}
+
