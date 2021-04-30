@@ -43,6 +43,7 @@ html{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   h1{
+    margin-top: 2rem;
     font-size: 40px;
     text-align: center;
   }
@@ -278,7 +279,6 @@ img{
 }
 
 .slide-1{
-  margin-top: 2rem;
   width: 100vw;
   position: absolute;
   overflow-x: hidden;
@@ -598,6 +598,10 @@ li{
   width: 45%;
   height: 100%;
   top: 0px;
+}
+
+.faclog{
+  margin-bottom: 40px;
 }
 
 }

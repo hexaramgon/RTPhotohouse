@@ -124,10 +124,10 @@ function Basis() {
             <img src={img12} className = 'imagehov' alt = "RT Filmhouse"></img>
             <img src={img16} className = 'imagehov' alt = "RT Filmhouse"></img>
           </div>
-        </div>
-        <div className='row'>
-          <h4 id='footertext'>Created and Designed by Hector J. Ramos</h4>
-          <img src={Facesvg} alt="Face Logo" />
+          <div className='row'>
+            <h4 id='footertext'>Created and Designed by Hector J. Ramos</h4>
+            <img src={Facesvg} alt="Face Logo" className='faclog' />
+          </div>
         </div>
       </div>    
             </div>
