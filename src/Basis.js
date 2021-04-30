@@ -28,8 +28,6 @@ import {Navbar, Nav} from 'react-bootstrap'
 function Basis() {
 
 
-  var y = window.scrollY
-
     const [slide, setSlide] = useState('0');
     const [yaxis, setyaxis] = useState({overflowY: 'visible'});
     // const [photodisplay, setdisplay] = useState({ display: 'none',});

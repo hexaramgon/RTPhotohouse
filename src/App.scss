@@ -158,18 +158,18 @@ html{
     width: 100px;
   }
   .navbar{
-    align-self: flex-end;
+    justify-content: space-around;
   }
-  .navbar-collapse {
-    width: 35%;
-    height: 100%;
-    background: #5e5e5e;
-    z-index: 2;
-    top: 0px;
-  }
+  // .navbar-collapse {
+  //   width: 35%;
+  //   height: 100%;
+  //   background: #5e5e5e;
+  //   z-index: 2;
+  //   top: 0px;
+  // }
   .nav-link{
-    padding-top: 3rem;
-    padding-bottom: 0rem;
+    // margin-top: 3rem;
+    padding: 2rem;
     align-self: center;
   }
   .pricebox{
@@ -286,7 +286,7 @@ img{
 }
 
 .slide-2{
-  margin-top: 2rem;
+  margin-top: 1rem;
   width: 100%;
   position: absolute;
   left: 100%;
@@ -295,7 +295,7 @@ img{
 }
 
 .slide-3{
-  margin-top: 2rem;
+  margin-top: 0rem;
   width: 100%;
   position: absolute;
   left: 200%;
@@ -526,19 +526,19 @@ li{
 }
 
 @media (max-width: 992px) {
-  .navbar-collapse {
-      position: fixed;
-      top: 50px;
-      left: 0;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-bottom: 15px;
-      width: 75%;
-      height: 100%;
-  }
+  // .navbar-collapse {
+  //     position: fixed;
+  //     top: 50px;
+  //     left: 0;
+  //     padding-left: 15px;
+  //     padding-right: 15px;
+  //     padding-bottom: 15px;
+  //     width: 75%;
+  //     height: 100%;
+  // }
 
   h1{
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   a:hover:after { transform: none}
@@ -553,59 +553,59 @@ li{
     transform: none; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
-  .navbar-collapse.collapsing {
-      left: -75%;
-      transition: height 0s ease;
-  }
+  // .navbar-collapse.collapsing {
+  //     left: -75%;
+  //     transition: height 0s ease;
+  // }
 
-  .navbar-collapse.show {
-      left: 0;
-      transition: left 300ms ease-in-out;
-  }
+  // .navbar-collapse.show {
+  //     left: 0;
+  //     transition: left 300ms ease-in-out;
+  // }
 
-  .navbar-toggler.collapsed ~ .navbar-collapse {
-      transition: left 500ms ease-in-out;
+  // .navbar-toggler.collapsed ~ .navbar-collapse {
+  //     transition: left 500ms ease-in-out;
+  // }
+
+  .navbar{
+    justify-content: flex-end;
+
   }
 }
 
 .bg-dark{
   background: #171717 !important;
 }
-
 .ul{
-  list-style-type: none;
-  padding: 0;
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  flex-wrap: nowrap; /* assumes you only want one row */
 }
 
-.navbar-collapse {
-  width: 35%;
-  height: 100%;
-  top: 0px;
-}
+// .navbar-collapse {
+//   width: 35%;
+//   height: 100%;
+//   top: 0px;
+// }
 
-.navbar-toggler {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  z-index: 4;
-  background: #484848;
-}
+// .navbar-toggler {
+//   position: fixed;
+//   top: 10px;
+//   right: 20px;
+//   z-index: 4;
+//   background: #484848;
+// }
 
 @media (max-width: 600px) {
   .imagehov:hover{
     transform: none; 
 }
 
-.navbar-collapse {
-  width: 45%;
-  height: 100%;
-  top: 0px;
-}
+// .navbar-collapse {
+//   width: 45%;
+//   height: 100%;
+//   top: 0px;
+// }
 
 .faclog{
   margin-bottom: 0px;
