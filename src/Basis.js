@@ -89,9 +89,6 @@ function Basis() {
 
         <animated.div className='mover'  style={props}>  
         <div className="slider slide-1"> 
-            <div className="slider-content" >
-
-                <div >
         <h1>REMEDIES AND TRAGEDIES</h1>
         <h2>RT FILMHOUSE</h2>
         <div className="row"> 
@@ -128,23 +125,15 @@ function Basis() {
           </div>
         </div>
       </div>    
-        </div>
-        </div>
         <div className="slider slide-2">
-            <div className="slider-content">
                 <About></About>
-            </div>
         </div>
         <div className="slider slide-3">
-            <div className="slider-content">
                 <Pricing></Pricing>
-            </div>
         </div>
     
         <div className="slider slide-4">
-            <div className="slider-content center">
                 <Contact></Contact>
-            </div>
         </div>
         </animated.div>
   </div>

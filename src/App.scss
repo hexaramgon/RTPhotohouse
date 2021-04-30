@@ -280,6 +280,7 @@ img{
 }
 
 .slide-1{
+  
   width: 100vw;
   position: absolute;
   overflow-x: hidden;
@@ -303,6 +304,7 @@ img{
 }
 
 .slide-4{
+  margin-top: -2rem;
   width: 100%;
   position: absolute;
   left: 300%;
@@ -588,13 +590,13 @@ li{
 //   top: 0px;
 // }
 
-// .navbar-toggler {
-//   position: fixed;
-//   top: 10px;
-//   right: 20px;
-//   z-index: 4;
-//   background: #484848;
-// }
+.navbar-toggler {
+  // position: fixed;
+  // top: 10px;
+  // right: 20px;
+  // z-index: 4;
+  background: #484848;
+}
 
 @media (max-width: 600px) {
   .imagehov:hover{
