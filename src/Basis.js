@@ -130,7 +130,7 @@ function Basis() {
           </div>
         </div>
       </div>    
-            </div>
+        </div>
         </div>
         <div className="slider slide-2">
             <div className="slider-content">

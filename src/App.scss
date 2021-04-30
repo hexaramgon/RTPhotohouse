@@ -110,6 +110,7 @@ html{
   flex-wrap: wrap;
   padding: 0 4px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -327,7 +328,7 @@ img{
 
 #footertext{
   text-align: left;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 // .photo-display{
