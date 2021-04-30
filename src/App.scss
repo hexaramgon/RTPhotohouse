@@ -534,6 +534,18 @@ li{
       height: 100%;
   }
 
+  a:hover:after { transform: none}
+  a.fromRight:after{ transform-origin:none }
+  a.fromLeft:after{  transform-origin:  none}
+  a:after {transform: none;
+  border-bottom: none;}
+
+  
+
+  .pricebox:hover{
+    transform: none; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
   .navbar-collapse.collapsing {
       left: -75%;
       transition: height 0s ease;
@@ -564,7 +576,7 @@ li{
 }
 
 .navbar-collapse {
-  width: 45%;
+  width: 35%;
   height: 100%;
   top: 0px;
 }
@@ -575,4 +587,17 @@ li{
   right: 20px;
   z-index: 4;
   background: #484848;
+}
+
+@media (max-width: 600px) {
+  .imagehov:hover{
+    transform: none; 
+}
+
+.navbar-collapse {
+  width: 45%;
+  height: 100%;
+  top: 0px;
+}
+
 }
