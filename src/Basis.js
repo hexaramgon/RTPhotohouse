@@ -21,6 +21,8 @@ import img13 from './images/I013.jpg';
 import img14 from './images/I014.jpg';
 import img15 from './images/I015.jpg';
 import img16 from './images/I016.jpg';
+// import faclog from './images/IMG_4100.png';
+
 import Facesvg from './face.svg'
 import {Navbar, Nav} from 'react-bootstrap'
 
@@ -120,8 +122,7 @@ function Basis() {
             <img src={img16} className = 'imagehov' alt = "RT Filmhouse"></img>
           </div>
           <div className='row'>
-          <img src={Facesvg} alt="Face Logo" className='faclog' />
-            <h4 id='footertext'>Created and Designed by Hector J. Ramos</h4>
+          <img src={Facesvg} className='faclog' alt="Face Logo" />
           </div>
         </div>
       </div>    

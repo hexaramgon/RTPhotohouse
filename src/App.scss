@@ -150,13 +150,6 @@ html{
     align-items: center;
   }
 
-  .format{
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-  .pricebox{
-    width: 100px;
-  }
   .navbar{
     justify-content: space-around;
   }
@@ -172,19 +165,15 @@ html{
     padding: 2rem;
     align-self: center;
   }
-  .pricebox{
-    width: 250px !important;
-  }
+  // .pricebox{
+  //   width: 250px !important;
+  // }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .profpic{
     width: 80vw;
-  }
-  .format{
-    margin-left: 25px;
-    margin-right: 25px;
   }
   .column {
     -ms-flex: 95%;
@@ -239,12 +228,6 @@ html{
     font-size: 34px  !important;
     display: block  !important;
   }
-  .pricingro {
-    margin-top: 2rem !important;
-  }
-  .pricebox{
-    width: 175px !important;
-  }
 }
 
 img{
@@ -264,10 +247,8 @@ img{
 .pricingro{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 5rem;
   height: 100vh;
-
+  justify-content: space-around;
 }
 
 .css-slider-wrapper{
@@ -280,7 +261,6 @@ img{
 }
 
 .slide-1{
-  
   width: 100vw;
   position: absolute;
   overflow-x: hidden;
@@ -304,11 +284,13 @@ img{
 }
 
 .slide-4{
-  margin-top: -2rem;
+  margin-top: 0rem;
   width: 100%;
   position: absolute;
   left: 300%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .mover{
@@ -444,13 +426,10 @@ input{
 }
 
 form{
-  width: 80%;
+  width: 90%;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 50px;
   border-radius: 10px;
 }
 
@@ -482,13 +461,13 @@ button:hover {
 .pricebox {
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(107, 107, 107);
   border-radius: 10px;
   text-align: center;
   width: 350px;
   height: 500px;
   background-color:  #333333;
   transition: transform .4s; /* Animation */
+  border-radius: 10px 10px 110px;
 }
 
 .pricebox:hover{
@@ -549,6 +528,7 @@ li{
   a:after {transform: none;
   border-bottom: none;}
 
+
   
 
   .pricebox:hover{
@@ -608,9 +588,30 @@ li{
 //   height: 100%;
 //   top: 0px;
 // }
-
-.faclog{
-  margin-bottom: 0px;
+.pricebox{
+  width: 90%;
+  height: 40%;
+  margin: 1rem;
+}
+.toppricebox{
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.pricingro{
+  flex-direction: column;
+  align-items: center;
+  justify-content: unset;
+}
+li{
+  padding-top: 0px;
 }
 
+}
+
+.faclog{
+  margin-bottom: 40px;
+  width: 100px;
+  height: auto;
 }
