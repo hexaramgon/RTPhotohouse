@@ -125,8 +125,8 @@ function Basis() {
             <img src={img16} className = 'imagehov' alt = "RT Filmhouse"></img>
           </div>
           <div className='row'>
+          <img src={Facesvg} alt="Face Logo" className='faclog' />
             <h4 id='footertext'>Created and Designed by Hector J. Ramos</h4>
-            <img src={Facesvg} alt="Face Logo" className='faclog' />
           </div>
         </div>
       </div>    
