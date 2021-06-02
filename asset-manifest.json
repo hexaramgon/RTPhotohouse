@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/RTPhotohouse/static/css/main.84f01b31.chunk.css",
-    "main.js": "/RTPhotohouse/static/js/main.2d3a9f72.chunk.js",
-    "main.js.map": "/RTPhotohouse/static/js/main.2d3a9f72.chunk.js.map",
-    "runtime-main.js": "/RTPhotohouse/static/js/runtime-main.e8ad123d.js",
-    "runtime-main.js.map": "/RTPhotohouse/static/js/runtime-main.e8ad123d.js.map",
-    "static/js/2.41f5b82a.chunk.js": "/RTPhotohouse/static/js/2.41f5b82a.chunk.js",
-    "static/js/2.41f5b82a.chunk.js.map": "/RTPhotohouse/static/js/2.41f5b82a.chunk.js.map",
-    "static/js/3.fbebdff6.chunk.js": "/RTPhotohouse/static/js/3.fbebdff6.chunk.js",
-    "static/js/3.fbebdff6.chunk.js.map": "/RTPhotohouse/static/js/3.fbebdff6.chunk.js.map",
+    "main.css": "/RTPhotohouse/static/css/main.800c35f5.chunk.css",
+    "main.js": "/RTPhotohouse/static/js/main.df1ede96.chunk.js",
+    "main.js.map": "/RTPhotohouse/static/js/main.df1ede96.chunk.js.map",
+    "runtime-main.js": "/RTPhotohouse/static/js/runtime-main.dafe5e75.js",
+    "runtime-main.js.map": "/RTPhotohouse/static/js/runtime-main.dafe5e75.js.map",
+    "static/css/2.0694b5c7.chunk.css": "/RTPhotohouse/static/css/2.0694b5c7.chunk.css",
+    "static/js/2.e4bd278c.chunk.js": "/RTPhotohouse/static/js/2.e4bd278c.chunk.js",
+    "static/js/2.e4bd278c.chunk.js.map": "/RTPhotohouse/static/js/2.e4bd278c.chunk.js.map",
+    "static/js/3.60986ae0.chunk.js": "/RTPhotohouse/static/js/3.60986ae0.chunk.js",
+    "static/js/3.60986ae0.chunk.js.map": "/RTPhotohouse/static/js/3.60986ae0.chunk.js.map",
     "index.html": "/RTPhotohouse/index.html",
-    "static/css/main.84f01b31.chunk.css.map": "/RTPhotohouse/static/css/main.84f01b31.chunk.css.map",
-    "static/js/2.41f5b82a.chunk.js.LICENSE.txt": "/RTPhotohouse/static/js/2.41f5b82a.chunk.js.LICENSE.txt",
+    "static/css/2.0694b5c7.chunk.css.map": "/RTPhotohouse/static/css/2.0694b5c7.chunk.css.map",
+    "static/css/main.800c35f5.chunk.css.map": "/RTPhotohouse/static/css/main.800c35f5.chunk.css.map",
+    "static/js/2.e4bd278c.chunk.js.LICENSE.txt": "/RTPhotohouse/static/js/2.e4bd278c.chunk.js.LICENSE.txt",
+    "static/media/Backimage.9589ee7f.png": "/RTPhotohouse/static/media/Backimage.9589ee7f.png",
     "static/media/I001.c9d0ebc0.jpg": "/RTPhotohouse/static/media/I001.c9d0ebc0.jpg",
     "static/media/I002.5def2305.jpg": "/RTPhotohouse/static/media/I002.5def2305.jpg",
     "static/media/I003.b576b6ff.jpg": "/RTPhotohouse/static/media/I003.b576b6ff.jpg",
@@ -28,13 +31,18 @@
     "static/media/I014.45ca00a6.jpg": "/RTPhotohouse/static/media/I014.45ca00a6.jpg",
     "static/media/I015.04d0c956.jpg": "/RTPhotohouse/static/media/I015.04d0c956.jpg",
     "static/media/I016.9ce47f2f.jpg": "/RTPhotohouse/static/media/I016.9ce47f2f.jpg",
-    "static/media/IMG_PROFILE.12263c53.png": "/RTPhotohouse/static/media/IMG_PROFILE.12263c53.png",
-    "static/media/face.65294a43.svg": "/RTPhotohouse/static/media/face.65294a43.svg"
+    "static/media/Landinglower1.14b3c870.png": "/RTPhotohouse/static/media/Landinglower1.14b3c870.png",
+    "static/media/Landinglower2.a1aaf0fa.png": "/RTPhotohouse/static/media/Landinglower2.a1aaf0fa.png",
+    "static/media/face.65294a43.svg": "/RTPhotohouse/static/media/face.65294a43.svg",
+    "static/media/option2.e3d38ea8.jpg": "/RTPhotohouse/static/media/option2.e3d38ea8.jpg",
+    "static/media/test.d535be29.png": "/RTPhotohouse/static/media/test.d535be29.png",
+    "static/media/wigga.6025c286.png": "/RTPhotohouse/static/media/wigga.6025c286.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e8ad123d.js",
-    "static/js/2.41f5b82a.chunk.js",
-    "static/css/main.84f01b31.chunk.css",
-    "static/js/main.2d3a9f72.chunk.js"
+    "static/js/runtime-main.dafe5e75.js",
+    "static/css/2.0694b5c7.chunk.css",
+    "static/js/2.e4bd278c.chunk.js",
+    "static/css/main.800c35f5.chunk.css",
+    "static/js/main.df1ede96.chunk.js"
   ]
 }
